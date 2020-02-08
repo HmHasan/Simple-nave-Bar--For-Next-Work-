@@ -1,0 +1,59 @@
+body
+{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#222;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+li{
+    list-style-type: none;
+} 
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.sub-menu
+{
+    display: none;
+}
+
+.main-menu ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    background: dodgerblue;
+    height: 30px;
+    line-height: 30px;
+}
+
+li.active a {
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+.main-menu ul li a:hover {
+    background: white;
+    color: black;
+}
+
+.main-menu ul li a {
+    transition: .2s;
+}
+
+.main-menu ul li:hover .sub-menu {
+    display: block;
+}
+
+.main-menu ul li:hover .sub-menu ul li {float: none;width: 100%;}
